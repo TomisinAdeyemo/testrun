@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <!-- Left Panel -->
+  <div class="button-panel">
+    <img src="./mainman.png" alt="Company Logo" class="logo">
+
+    <button id="dashboard-btn">Dashboard</button>
+    <button id="users-btn">Users</button>
+    <button id="earnings-btn">Earnings</button>
+    <button id="expense-btn">Expenses</button>
+    <button id="email-btn">Email Broadcast</button>
+    <button id="report-btn">Reports</button>
+  </div>
+
+  <div id="dashboard-section" class="content-section">
+    <div class="top-bar">
+      <div class="search-container">
+        <input type="text" placeholder="Search Customer ID" class="search-field">
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="admin-profile">
+        <img src="./AO1I4838-Edit-3-scaled.jpg" alt="Admin Profile" class="admin-image">
+        <span class="admin-name">Adeyemo</span>
+      </div>
+    </div>
+
+    <div class="user-boxes">
+      <!-- User Box 1 -->
+      <div class="user-box">
+        <h1><i class="fas fa-user"></i>Total Users</h1>
+        <h2>152,000</h2>
+        <h4>+9.36 Previous Month</h4>
+      </div>
+
+      <!-- User Box 2 -->
+      <div class="user-box">
+        <h1><i class="fas fa-user"></i>Active Subscriptions</h1>
+        <h2>105,000</h2>
+        <h4>+9.36 Previous Month</h4>
+      </div>
+
+      <!-- User Box 3 -->
+      <div class="user-box">
+        <h1><i class="fas fa-user"></i>Inactive Users</h1>
+        <h2>40,300</h2>
+        <h4>+9.36 Previous Month</h4>
+      </div>
+
+      <!-- User Box 4 -->
+      <div class="user-box">
+        <h1><i class="fas fa-user"></i>Active Trial Users</h1>
+        <h2>23,000</h2>
+        <h4>+9.36 Previous Month</h4>
+      </div>
+    </div>
+
+    <div class="big-box-container">
+        <div class="big-box">
+          <div class="box-header">
+            <h1>Customer Demographic</h1>
+            <div class="switch-container">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+                <span class="switch-label">Switch 1</span>
+              </label>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+                <span class="switch-label">Switch 2</span>
+              </label>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+                <span class="switch-label">Switch 3</span>
+              </label>
+            </div>
+          </div>
+          <div class="map-container">
+            <img src="usa-map-placeholder.png" alt="Map of USA" class="map-image">
+          </div>
+        </div>
+        
+        <div class="big-box">
+          <div class="box-header">
+            <h1>Users Info</h1>
+            <div class="switch-container">
+              <label class="switch">
+                <input type="radio" name="userFilter" value="all" checked>
+                <span class="slider"></span>
+                <span class="switch-label">All</span>
+              </label>
+              <label class="switch">
+                <input type="radio" name="userFilter" value="man">
+                <span class="slider"></span>
+                <span class="switch-label">Man</span>
+              </label>
+              <label class="switch">
+                <input type="radio" name="userFilter" value="woman">
+                <span class="slider"></span>
+                <span class="switch-label">Woman</span>
+              </label>
+            </div>
+          </div>
+          <div class="user-info-container">
+            <div class="user-info">
+              <h2>Apple Send Frequency</h2>
+              <h4 id="user1-info">Loading</h4>
+            </div>
+            <div class="user-info">
+              <h2>Accepted Apples</h2>
+              <h4 id="user2-info">Loading...</h4>
+            </div>
+            <div class="user-info">
+              <h2>Daily Apples Exchanged</h2>
+              <h4 id="user3-info">Loading...</h4>
+            </div>
+            <div class="user-info">
+              <h2>Pre Subscription Time</h2>
+              <h4 id="user4-info">Loading...</h4>
+            </div>
+            <div class="user-info">
+              <h2>User 5</h2>
+              <h4 id="user5-info">Loading...</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  
+
+  <!--USERS-->
+  <div id="users-section" class="content-section">
+    <div class="top-bar">
+      <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-field">
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="admin-profile">
+        <img src="./AO1I4838-Edit-3-scaled.jpg" alt="Admin Profile" class="admin-image">
+        <span class="admin-name">Adeyemo</span>
+      </div>
+    </div>
+
+    <div class="users-info">
+      <h2>Users</h2>
+      <h4>Active Users record</h4>
+      <button class="add-user-button">Add User</button>
+    </div>
+
+
+  <div class="users-filter">
+    <div class="gliding-buttons">
+      <button class="filter-button active">All</button>
+      <button class="filter-button">Active</button>
+      <button class="filter-button">Inactive</button>
+      <button class="filter-button">Total</button>
+    </div>
+    <div class="search-field">
+      <input type="text" placeholder="Search..." />
+      <button class="search-button">🔍</button>
+    </div>
+  </div>
+
+  <div class="user-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile Number</th>
+          <th>Packages</th>
+          <th>Lifespan</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="user-table-body">
+        <!-- Data rows will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <div id="earnings" class="content-section" style="display: none;">
+    <div class="analytics-content">
+      <div class="left-section">
+        <h3>Revenue</h3>
+        <h2>$10,500</h2>
+        <h3>Expenses</h3>
+        <h2>$7,200</h2>
+      </div>
+      <div class="right-section">
+        <div class="dynamic-button">
+          <button class="toggle-option active" onclick="changeChart('week')">Past Week</button>
+          <button class="toggle-option" onclick="changeChart('month')">Past Month</button>
+          <button class="toggle-option" onclick="changeChart('year')">Past Year</button>
+        </div>
+        <canvas id="line-chart" width="400" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+  
+
+  </div>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
